@@ -111,11 +111,11 @@
 ;;;; Fontification stuff
 
 ;;; Add smv-mode to the list of fontified modes
-(if (string-match "XEmacs" emacs-version) ()
-  (setq font-lock-defaults-alist 
-	(cons '(smv-mode smv-font-lock-keywords
-			 nil nil nil nil)
-	      font-lock-defaults-alist)))
+;; (if (string-match "XEmacs" emacs-version) ()
+;;   (setq font-lock-defaults-alist
+;; 	(cons '(smv-mode smv-font-lock-keywords
+;; 			 nil nil nil nil)
+;; 	      font-lock-defaults-alist)))
 
 (defun smv-keyword-match (keyword)
 ;  "Convert a string into a regexp matching any capitalization of that string."
@@ -835,6 +835,7 @@ buffer some time later.
 
 Please send bugs and suggestions to berez+@cs.cmu.edu."
   (interactive)
+  (setq font-lock-defaults '(smv-font-lock-keywords))
   (use-local-map smv-mode-map)
 ;;; Disable asking for the compile command
   (make-local-variable 'compilation-read-command)
