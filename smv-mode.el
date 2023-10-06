@@ -154,7 +154,7 @@
 
 (defconst smv-keywords
   '("MODULE" "VAR" "IVAR" "TRANS" "ASSIGN" "INVAR" "DEFINE" "SPEC"
-    "LTLSPEC" "INVARSPEC" "JUSTICE" "COMPASSION" "process" "array"
+    "LTLSPEC" "CTLSPEC" "INVARSPEC" "JUSTICE" "COMPASSION" "process" "array"
     "FAIRNESS" "case" "esac" "AG" "EG" "AF" "EF" "AX" "EX" "U" "of" "mod"
     "A" "F" "G" "X" "xor" "xnor" "O" "H" "Y" "Z" "S" "V" "T" "TRUE" "FALSE"
     "0" "1" "for" "WORDS" "WORDDEFINE" "boolean" "next" "init" "INIT" "ISA"
