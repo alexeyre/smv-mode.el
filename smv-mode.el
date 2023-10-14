@@ -805,8 +805,7 @@ improvement."
     (define-key smv-mode-map "\C-c;"  'comment-region)
     (define-key smv-mode-map "\t"  'smv-indent-line)))
 
-(defun smv-mode ()
-  "Major mode for SMV specification files. 
+(define-derived-mode smv-mode prog-mode "Major mode for SMV specification files.
 
 \\{smv-mode-map}
 
@@ -834,7 +833,7 @@ at a time. I'll probably implement the option of not erasing this
 buffer some time later.
 
 Please send bugs and suggestions to berez+@cs.cmu.edu."
-  (interactive)
+  ; (interactive)
   (setq font-lock-defaults '(smv-font-lock-keywords))
   (use-local-map smv-mode-map)
 ;;; Disable asking for the compile command
